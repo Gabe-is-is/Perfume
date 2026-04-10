@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fraunces", "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #1c232b;
+  --grey: #6c7289;
+  --cream: #f2eae2;
+  --white: #ffffff;
+  --green-500: #3d8168;
+  --green-700: #1a4032;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.img {
+  width: 350px;
+  height: 342px;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+section {
+  padding: 2rem;
+}
+
+h1 {
+  color: var(--grey);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.3125rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+p {
+  color: var(--grey);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: var(--green-500);
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--grey);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration-line: line-through;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  background-color: var(--green-500);
+  width: 17.875rem;
+  height: 3.125rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: var(--cream);
+  }
+
+  main {
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  .img {
+    content: url("image/img.svg");
+    width: 50%;
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  section {
+    width: 50%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
