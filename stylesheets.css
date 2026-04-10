@@ -24,7 +24,7 @@ body {
 main {
   background-color: var(--white);
   width: 100%;
-  max-width: 350px;
+  max-width: 21.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,8 +32,8 @@ main {
 }
 
 .img {
-  width: 350px;
-  height: 342px;
+  width: 21.875rem;
+  height: 21.375rem;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -91,7 +91,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: .5rem;
   color: var(--white);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -103,14 +103,14 @@ button {
   border: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
     background-color: var(--cream);
   }
 
   main {
     flex-direction: row;
-    max-width: 600px;
+    max-width: 37.5rem;
   }
 
   .img {
