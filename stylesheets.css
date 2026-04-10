@@ -104,6 +104,10 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: var(--green-700);
+}
+
 @media (min-width: 48rem) {
   body {
     background-color: var(--cream);
